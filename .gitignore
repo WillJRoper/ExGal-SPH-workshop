@@ -205,3 +205,33 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# SPH Workshop specific ignores
+# Simulation outputs
+snapshots/*.hdf5
+snapshots/*.xmf
+videos/*.mp4
+videos/*.avi
+videos/*.png
+videos/frame_*.png
+
+# Initial conditions and parameter files outputs
+ics/*.hdf5
+params/output_list.txt
+params/sedov_output_list.txt
+params/image_output_list.txt
+
+# SWIFT outputs
+*.log
+restart_*.dat
+used_parameters.yml
+statistics.txt
+
+# Large data files
+*.dat
+*.bin
+
+# Temporary files
+*.tmp
+*.swp
+*~
