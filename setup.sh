@@ -24,16 +24,18 @@ echo ""
 ./autogen.sh
 echo ""
 cd -
+echo ""
 
 # Download EAGLE data dependencies incase we use them
 echo "Downloading EAGLE data dependencies..."
+echo ""
 cd $REPO_DIR
 $SWIFT_DIR/examples/EAGLE_ICs/getEagleCoolingTable.sh
 $SWIFT_DIR/examples/EAGLE_ICs/getEaglePhotometryTable.sh
 $SWIFT_DIR/examples/EAGLE_ICs/getEagleYieldTable.sh
 $SWIFT_DIR/examples/EAGLE_ICs/getPS2020CoolingTables.sh
 cd -
+echo ""
 
 # Export some helpful environment variables to automate things later
-export SWIFT_DIR
 export PATH=$SWIFT_DIR/$PATH
