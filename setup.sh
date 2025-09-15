@@ -38,4 +38,5 @@ cd -
 echo ""
 
 # Export some helpful environment variables to automate things later
+export $SWIFT_DIR
 export PATH=$SWIFT_DIR:$PATH
