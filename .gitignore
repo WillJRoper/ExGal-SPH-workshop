@@ -220,6 +220,7 @@ ics/*.hdf5
 params/output_list.txt
 params/sedov_output_list.txt
 params/image_output_list.txt
+params/*
 
 # SWIFT outputs
 *.log
