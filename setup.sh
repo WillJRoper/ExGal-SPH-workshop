@@ -36,3 +36,5 @@ source $REPO_DIR/venv/bin/activate
 pip install --upgrade pip
 pip install -r $REPO_DIR/requirements.txt
 echo ""
+
+cd $REPO_DIR
