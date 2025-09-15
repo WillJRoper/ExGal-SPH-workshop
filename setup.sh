@@ -35,6 +35,7 @@ python -m venv $REPO_DIR/venv
 source $REPO_DIR/venv/bin/activate
 pip install --upgrade pip
 pip install -r $REPO_DIR/requirements.txt
+deactivate
 echo ""
 
 cd $REPO_DIR

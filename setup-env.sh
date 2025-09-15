@@ -2,6 +2,10 @@
 
 # This script sets up the environment for the ExGal-SPH workshop.
 
+# Print the hostname, we'll need this to connect locally
+echo "You are logged into $(hostname)"
+echo ""
+
 # Define the directories we have lost track of (starting from the current directory)
 REPO_DIR=$(pwd)
 SWIFT_DIR=$REPO_DIR/swiftsim
