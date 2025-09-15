@@ -17,10 +17,12 @@ git clone https://gitlab.cosma.dur.ac.uk/swift/swiftsim.git $SWIFT_DIR
 
 # Download EAGLE data dependencies incase we use them
 echo "Downloading EAGLE data dependencies..."
+cd REPO_DIR
 $SWIFT_DIR/examples/EAGLE_ICs/getEagleCoolingTable.sh
 $SWIFT_DIR/examples/EAGLE_ICs/getEaglePhotometryTable.sh
 $SWIFT_DIR/examples/EAGLE_ICs/getEagleYieldTable.sh
 $SWIFT_DIR/examples/EAGLE_ICs/getPS2020CoolingTables.sh
+cd -
 
 # Export some helpful environment variables to automate things later
 export SWIFT_DIR
