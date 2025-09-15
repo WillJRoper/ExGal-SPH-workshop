@@ -9,7 +9,6 @@ scipy>=1.7.0
 # Data formats and I/O
 h5py>=3.2.0
 astropy>=4.0.0
-pillow>=8.0.0
 
 # Units and astronomy
 unyt>=2.8.0
@@ -18,15 +17,5 @@ unyt>=2.8.0
 notebook>=6.4.0
 ipywidgets>=7.6.0
 
-# Optional: Advanced analysis and visualization
-# swiftsimio>=5.0.0  # Uncomment if available
-# yt>=4.0.0          # Uncomment for advanced visualization
-
-# Optional: Movie creation (if ffmpeg is available)
-# imageio>=2.9.0     # Alternative to ffmpeg for movie creation
-# imageio-ffmpeg>=0.4.0
-
-# Development and testing (optional)
-# pytest>=6.0.0
-# black>=21.0.0
-# flake8>=3.9.0
+# SWIFT simulation analysis
+swiftsimio

@@ -40,3 +40,10 @@ echo ""
 # Export some helpful environment variables to automate things later
 export $SWIFT_DIR
 export PATH=$SWIFT_DIR:$PATH
+
+# Set up the python environment
+python -m venv $REPO_DIR/venv
+source $REPO_DIR/venv/bin/activate
+pip install --upgrade pip
+pip install -r $REPO_DIR/requirements.txt
+echo ""
