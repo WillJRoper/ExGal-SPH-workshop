@@ -9,6 +9,9 @@ git clone https://github.com/WillJRoper/ExGal-SPH-workshop.git $REPO_DIR
 
 # Load the necessary modules
 echo "Loading necessary modules..."
+echo "Running: module load intel_comp/2024.2.0 compiler-rt tbb compiler mpi ucx/1.17.0 parallel_hdf5/1.14.4 fftw/3.3.10 parmetis/4.0.3-64bit gsl/2.8 python/3.12.4"
+module load intel_comp/2024.2.0 compiler-rt tbb compiler mpi ucx/1.17.0 parallel_hdf5/1.14.4 fftw/3.3.10 parmetis/4.0.3-64bit gsl/2.8 python/3.12.4
+module list
 
 # Clone SWIFT
 SWIFT_DIR=$REPO_DIR/swiftsim
