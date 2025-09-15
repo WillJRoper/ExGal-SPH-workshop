@@ -2,8 +2,8 @@
 
 # This script sets up the environment for the ExGal-SPH workshop.
 
-# Define the directories we have lost track of
-REPO_DIR=$1
+# Define the directories we have lost track of (starting from the current directory)
+REPO_DIR=$(pwd)
 SWIFT_DIR=$REPO_DIR/swiftsim
 export SWIFT_DIR
 export REPO_DIR
