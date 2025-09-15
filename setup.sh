@@ -6,7 +6,7 @@
 REPO_DIR=$1
 echo "Cloning the ExGal-SPH-workshop repository into $REPO_DIR"
 git clone https://github.com/WillJRoper/ExGal-SPH-workshop.git $REPO_DIR
-echo "\n"
+echo ""
 
 # Load the necessary modules
 echo "Loading necessary modules..."
@@ -22,7 +22,7 @@ git clone https://gitlab.cosma.dur.ac.uk/swift/swiftsim.git $SWIFT_DIR
 cd $SWIFT_DIR
 echo ""
 ./autogen.sh
-echo "\n"
+echo ""
 
 # Download EAGLE data dependencies incase we use them
 echo "Downloading EAGLE data dependencies..."
