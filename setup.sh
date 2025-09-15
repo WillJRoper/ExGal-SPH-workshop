@@ -31,6 +31,7 @@ cd -
 echo ""
 
 # Set up the python environment
+module load python/3.12.4
 python -m venv $REPO_DIR/venv
 source $REPO_DIR/venv/bin/activate
 pip install --upgrade pip
