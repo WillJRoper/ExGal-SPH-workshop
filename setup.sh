@@ -1,18 +1,11 @@
 #!/bin/bash
 
-# This script sets up the environment and your directory for the ExGal-SPH workshop.
+# This script sets up your directory structure for the ExGal-SPH workshop and downloads some dependent data.
 
 # Clone the repo to the directory passed as an argument
 REPO_DIR=$1
 echo "Cloning the ExGal-SPH-workshop repository into $REPO_DIR"
 git clone https://github.com/WillJRoper/ExGal-SPH-workshop.git $REPO_DIR
-echo ""
-
-# Load the necessary modules
-echo "Loading necessary modules..."
-echo "Running: module load intel_comp/2024.2.0 compiler-rt tbb compiler mpi ucx/1.17.0 parallel_hdf5/1.14.4 fftw/3.3.10 parmetis/4.0.3-64bit gsl/2.8 python/3.12.4"
-module load intel_comp/2024.2.0 compiler-rt tbb compiler mpi ucx/1.17.0 parallel_hdf5/1.14.4 fftw/3.3.10 parmetis/4.0.3-64bit gsl/2.8 python/3.12.4
-module list
 echo ""
 
 # Clone SWIFT
@@ -39,6 +32,7 @@ echo ""
 
 # Export some helpful environment variables to automate things later
 export $SWIFT_DIR
+export $REPO_DIR
 export PATH=$SWIFT_DIR:$PATH
 
 # Set up the python environment
@@ -47,9 +41,3 @@ source $REPO_DIR/venv/bin/activate
 pip install --upgrade pip
 pip install -r $REPO_DIR/requirements.txt
 echo ""
-
-# Boot up a jupyter notebook in the notebooks directory and run it in the
-# background reporting the url to connect to
-NOTEBOOK_DIR=$REPO_DIR/notebooks
-echo "Starting a jupyter notebook server in $NOTEBOOK_DIR"
-nohup jupyter notebook --ip='*' --port=8888 --no-browser --allow-root --notebook-dir=$NOTEBOOK_DIR
