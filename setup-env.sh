@@ -9,10 +9,6 @@ export SWIFT_DIR
 export REPO_DIR
 export PATH=$SWIFT_DIR:$PATH
 
-# Request a thread to work on with the notebook
-echo "Requesting a thread to work on with the notebook: srun -p dine2 -A do020 -t 01:30:00 -n 1 --pty /bin/bash"
-srun -p dine2 -A do020 -t 01:30:00 -n 1 --pty /bin/bash
-
 # Load the necessary modules
 echo "Loading necessary modules..."
 echo "Running: module load intel_comp/2024.2.0 compiler-rt tbb compiler mpi ucx/1.17.0 parallel_hdf5/1.14.4 fftw/3.3.10 parmetis/4.0.3-64bit gsl/2.8 python/3.12.4"
