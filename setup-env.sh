@@ -27,4 +27,4 @@ source $REPO_DIR/venv/bin/activate
 # background reporting the url to connect to
 NOTEBOOK_DIR=$REPO_DIR/notebooks
 echo "Starting a jupyter notebook server in $NOTEBOOK_DIR"
-jupyter notebook --ip='*' --port=8888 --no-browser --allow-root --notebook-dir=$NOTEBOOK_DIR
+jupyter notebook --ip='*' --port=8888 --no-browser --notebook-dir=$NOTEBOOK_DIR
