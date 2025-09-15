@@ -2,6 +2,13 @@
 
 # This script sets up the environment for the ExGal-SPH workshop.
 
+# Define the directories we have lost track of
+REPO_DIR=$1
+SWIFT_DIR=$REPO_DIR/swiftsim
+export SWIFT_DIR
+export REPO_DIR
+export PATH=$SWIFT_DIR:$PATH
+
 # Request a thread to work on with the notebook
 echo "Requesting a thread to work on with the notebook: srun -p dine2 -A do020 -t 01:30:00 -n 1 --pty /bin/bash"
 srun -p dine2 -A do020 -t 01:30:00 -n 1 --pty /bin/bash

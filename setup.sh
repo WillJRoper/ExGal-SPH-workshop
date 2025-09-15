@@ -30,11 +30,6 @@ $SWIFT_DIR/examples/EAGLE_ICs/getPS2020CoolingTables.sh
 cd -
 echo ""
 
-# Export some helpful environment variables to automate things later
-export $SWIFT_DIR
-export $REPO_DIR
-export PATH=$SWIFT_DIR:$PATH
-
 # Set up the python environment
 python -m venv $REPO_DIR/venv
 source $REPO_DIR/venv/bin/activate
