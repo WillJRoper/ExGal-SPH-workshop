@@ -26,7 +26,7 @@ echo ""
 
 # Download EAGLE data dependencies incase we use them
 echo "Downloading EAGLE data dependencies..."
-cd REPO_DIR
+cd $REPO_DIR
 $SWIFT_DIR/examples/EAGLE_ICs/getEagleCoolingTable.sh
 $SWIFT_DIR/examples/EAGLE_ICs/getEaglePhotometryTable.sh
 $SWIFT_DIR/examples/EAGLE_ICs/getEagleYieldTable.sh
