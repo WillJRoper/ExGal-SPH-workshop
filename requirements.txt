@@ -19,3 +19,6 @@ ipywidgets>=7.6.0
 
 # SWIFT simulation analysis
 swiftsimio
+
+# Progress bars
+tqdm
