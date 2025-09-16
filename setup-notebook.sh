@@ -9,7 +9,7 @@ REPO_DIR=$(pwd)
 SWIFT_DIR=$REPO_DIR/swiftsim
 
 # Activate the python virtual environment
-source $REPO_DIR/venv/bin/activate
+source sph-env/bin/activate
 
 # Boot up a jupyter notebook in the notebooks directory and run it in the
 # background reporting the url to connect to
