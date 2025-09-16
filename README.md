@@ -31,9 +31,10 @@ Then get an interactive session on DINE2.
 srun -p dine2 -A do020 -t 01:30:00 -n 1 --pty /bin/bash
 ```
 
-Now we can start the notebook on the remote side (Cosma).
+Now we can activate our environment and start the notebook on the remote side (Cosma).
 
 ```bash
+source sph-env/bin/activate
 ./setup-notebook.sh
 ```
 
