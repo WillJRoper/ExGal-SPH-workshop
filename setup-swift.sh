@@ -2,6 +2,6 @@
 
 # Clone SWIFT
 git clone https://gitlab.cosma.dur.ac.uk/swift/swiftsim.git
-cd $SWIFT_DIR
+cd swiftsim
 ./autogen.sh
 cd
