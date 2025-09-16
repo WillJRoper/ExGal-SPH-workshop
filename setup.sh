@@ -2,13 +2,8 @@
 
 # This script sets up your directory structure for the ExGal-SPH workshop and downloads some dependent data.
 
-# Clone the repo to the directory passed as an argument
-REPO_DIR=$1
-echo "Cloning the ExGal-SPH-workshop repository into $REPO_DIR"
-git clone https://github.com/WillJRoper/ExGal-SPH-workshop.git $REPO_DIR
-echo ""
-
 # Clone SWIFT
+REPO_DIR=$(pwd)
 SWIFT_DIR=$REPO_DIR/swiftsim
 echo "Cloning SWIFT into $SWIFT_DIR"
 git clone https://gitlab.cosma.dur.ac.uk/swift/swiftsim.git $SWIFT_DIR
@@ -16,17 +11,6 @@ cd $SWIFT_DIR
 echo ""
 ./autogen.sh
 echo ""
-cd -
-echo ""
-
-# Download EAGLE data dependencies incase we use them
-echo "Downloading EAGLE data dependencies..."
-echo ""
-cd $REPO_DIR
-$SWIFT_DIR/examples/EAGLE_ICs/getEagleCoolingTable.sh
-$SWIFT_DIR/examples/EAGLE_ICs/getEaglePhotometryTable.sh
-$SWIFT_DIR/examples/EAGLE_ICs/getEagleYieldTable.sh
-$SWIFT_DIR/examples/EAGLE_ICs/getPS2020CoolingTables.sh
 cd -
 echo ""
 
