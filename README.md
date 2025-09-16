@@ -43,6 +43,6 @@ Finaly, on your local machine, you can open an ssh tunnel and connect to the not
 ssh -o ServerAliveInterval=60 -N -L 8888:<node>:8888 <user>@login8.cosma.dur.ac.uk
 ```
 
-The node will have been printed out by the `setup-notebook.sh` script before starting the notebook server.
+The first port (8888) here is the port on your local machine (which you will need to include in the URL you open in your browser). The second port (8888) is the port on the remote machine (Cosma) which was printed out by the `setup-notebook.sh` script (by default this is also 8888). The `<node>` is the compute node you were allocated by `srun` above, this is also printed out by the `setup-notebook.sh` script. Finally, `<user>` is your usual Cosma username.
 
 Now you can get to work on the notebooks in the `notebooks` directory.
