@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# This script sets up the environment for the ExGal-SPH workshop.
-
 # Print the hostname, we'll need this to connect locally
 echo "You are logged into $(hostname)"
 echo ""
